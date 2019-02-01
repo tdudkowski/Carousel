@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Carousel with Lightbox</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <nav><a href="https://tdudkowski.github.io/">to Github Page</a> | <a href="https://github.com/tdudkowski/Carousel">repo
+   of Carousel</a></nav>
+ <header>
+  <h1>Carousel with Lightbox</h1>
+ </header>
+ <section>
+
+  <!-- CAROUSEL -->
+  <div id="carousel" data-interval="false" class="carousel slide" data-ride="carousel wrapAround">
+
+   <!-- SETS -->
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+     <a href="img/set1p1.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set1p1_small.jpg"></a>
+     <a href="img/set1p2.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set1p2_small.jpg"></a>
+     <a href="img/set1p3.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set1p3_small.jpg"></a>
+    </div>
+    <div class="carousel-item">
+     <a href="img/set2p1.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set2p1_small.jpg"></a>
+     <a href="img/set2p2.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set2p2_small.jpg"></a>
+     <a href="img/set2p3.jpg" data-lightbox="image" data-title="Caption" data-lightbox="Gallery"><img src="img/set2p3_small.jpg"></a>
+    </div>
+
+    <!-- INDICATORS -->
+    <ol class="carousel-indicators">
+     <li class="active"></li>
+     <li></li>
+    </ol>
+
+    <!-- ARROWS -->
+    <a class="carousel-control-prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">prev</span>
+    </a>
+    <a class="carousel-control-next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">next</span>
+    </a>
+   </div>
+  </div>
+ </section>
+ <section>
+  <h2>Simple Slideshow / Carousel with Lightbox</h2>
+  <ul>
+   <li>Original Lokesh Lightbox is in CDN, two links (CSS and JS), looped by piece of code at the end of JS file.</li>
+   <li>Carousel slides when 1) controls on both sides or 2) indicators or 3) arrows keys on kbd are clicked.</li>
+   <li>Clicking in picture starts Lightbox.</li>
+  </ul>
+  <h2>ToDo</h2>
+  <ul>
+   <li>RWD</li>
+   <li>optional autoslider</li>
+   <li>move basic parameters aside</li>
+  </ul>
+ </section>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+ <script src="main.js"></script>
+</body>
+
+</html>
